@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Quiz from './components/Quiz';
 import './App.css';
 
 function App() {
@@ -14,7 +15,7 @@ function App() {
       {!startQuiz ? (
         <button onClick={handleStartQuiz}>Start Quiz</button>
       ) : (
-        <p> Load Quiz App</p>
+        <Quiz />
       )}
     </div>
   );
